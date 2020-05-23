@@ -1,0 +1,56 @@
+
+<style>
+    body {
+        background-color: black;
+        user-select: none;
+    }
+</style>
+
+
+
+
+    <section class="button">
+
+        <section class="record">
+            <div class="mine"></div>
+            <div class="status"></div>
+            <div class="time">
+
+                <div class="reloj" id="Minutos">00</div>
+                <div class="reloj" id="Segundos">:00</div>
+
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="startButton">
+                <div class="start">Iniciar</div>
+            </div>
+            <div class="difficulty" style="display:none">
+                <div class="easy">Facil</div>
+                <div class="normal">Normal</div>
+                <div class="hard">Dificil</div>
+                <div class="veryHard">Muy Dificil</div>
+            </div>
+
+            <section class="wingame">
+                <form method="post" action="listOfWinner">
+                    <div class="form-group">
+                        <label>Nombre</label> <br>
+                        <input text="email" class="form-control" name="name" placeholder="Introduce tu nombre">
+                        <input type="text" class="form-control times" name="time">
+                        <input type="text" class="form-control showDifficulty" name="difficulty">
+                    </div>
+                    <button type="submit" class="btn btn-">Guardar</button>
+                </form>
+            </section>
+
+            <div id="board"></div>
+            <button class="reset-button">Reset</button>
+        </div>
+    </section>
+    <button class="reset-button" action="buscaminas"></button>
+
+
+
+
